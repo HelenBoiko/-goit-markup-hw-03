@@ -5,41 +5,83 @@
   --accent-link-color: #2196f3;
   --bg-color-section: #2f303a;
   --button-color: #f5f4fa;
+  --bg-adress-color: rgba(255, 255, 255, 0.6); 
+  --logo-header-color: #000
 }
 
 body {
-  font-family: Roboto;
-  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  
   background-color: var(--bg-color);
   font-weight: 400;
+}
+
+ul{
+  list-style: none;
 }
 /* header */
 .logo {
   font-family: Raleway;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
   letter-spacing: 0.03em;
   color: var(--accent-link-color);
 }
 
+.logo-studio-black {
+  color: var(--logo-header-color);
+}
+
+.logo-studio-white {
+  color: var(--bg-color);
+}
+
 .list-nav a,
 .contact-nav a {
-  color: var(--title-color);
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration-line: none;
+  color: var(--title-color);
 }
 
-.list-nav a:hover {
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list-nav a:hover,
+.list-nav a:focus {
   color: var(--accent-link-color);
+  
 }
 
 .contact-nav a:hover,
 .contact-nav a:focus {
   color: var(--accent-link-color);
 }
+
+.item-button button:hover,
+.item-button button:focus {
+  color:  var(--accent-link-color);
+}
+
+.list-nav .current {
+  color: var(--accent-link-color);
+}
+
 
 /* main section */
 .section {
@@ -48,7 +90,9 @@ body {
 }
 
 .section-page {
+  font-family: Roboto;
   font-weight: 900;
+  font-style: normal;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -57,8 +101,9 @@ body {
 }
 
 .section-button {
-  color: var(--bg-color);
-  background: var(--accent-link-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -66,53 +111,139 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px;
-  border-radius: 4px;
-}
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-color);
+  border-radius: 4px; 
+  color: var(--bg-color);
+  background: var(--accent-link-color);
 }
 
 .main-section {
   color: var(--main-text-color);
 }
 
-.main-title {
+.section-command {
+  background-color: var(--button-color);
+}
+
+.title-command {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-color);
 }
 
-p {
+.main-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.title-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.item-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.0;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+
+}
+
+.list-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.item-name > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
-/* button */
-.button [type="button"] {
-  color: var(--title-color);
-  background-color: var(--button-color);
+/* button  */
+.sektion-button [type="button"] {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; 
   letter-spacing: 0.06em;
+  text-decoration-line: none;
+  color: var(--title-color);
+  background-color: var(--button-color);
+
 }
 
 button {
   cursor: pointer;
+  
 }
 
-.button {
+.item-button .button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-color);
   background-color: var(--button-color);
 }
 
-.button:hover {
+.button:hover
+.button:focus {
   color: var(--button-color);
   background-color: var(--accent-link-color);
+}
+/*footer*/
+
+.footer-color {
+  background-color: var(--bg-color-section);
+}
+
+.logo p {
+  color: var(--button-color);
+}
+
+.contact-nav-color a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--bg-adress-color);
 }
