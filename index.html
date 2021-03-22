@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!--Шапка сайта-->
-  <header>
+  <header class="page-header">
+    <div class="container">
     <nav>
       <a class="logo" href="./index.html">Web<span class="logo-studio-black">Studio</span></a>
         <ul class="list-nav">
@@ -26,19 +26,26 @@
           <li><a href="">Контакты</a></li>
         </ul>
     </nav>
+    
         <ul class="contact-nav">
           <li><a href="mailto:info@devstudio.coma">info@devstudio.coma</a></li>
           <li><a href="tel:+380961111111">+380961111111</a></li>
         </ul>
+    </div>
   </header>
     <!--Первая секция. Эффективные решения-->
   <main>
+    <div class="container">
+
     <section class="section">
-      <h1 class="section-page">Эффективные решения <br />для вашего бизнеса</h1>
+      
+      <h1 class="section-hero">Эффективные решения <br />для вашего бизнеса</h1>
 				<button class="section-button" type="button" >Заказать услугу</button>
+      </div>
     </section>
     <section class="main-section">
             <!--Вторая секция. Наши особености-->
+      <div class="container">
             <h2 class="visually-hidden">Наши особености</h2>
         <ul>
           <li>
@@ -66,9 +73,11 @@
               </p>
           </li>
         </ul>
+      </div>
     </section>
         <!--Третья секция. Чем мы занимаемся-->
     <section >
+      <div class="container">
       <h2 class="title-command">Чем мы занимаемся</h2>
         <ul>
           <li>
@@ -81,9 +90,11 @@
           	<img src="imeges/box.3.png" alt="draw in a gadget" width="370">
             </li>
         </ul>
+      </div>
     </section>
       <!--Четвёртая секция. Наша команда-->
     <section class="section-command">
+      <div class="container">
       <h2  class="title-command">Наша команда</h2>
 				<ul>
 						<li>
@@ -107,18 +118,21 @@
               <p class="list-name">UI Designer</p>
 						</li>
 				</ul>
-        </section>
+      </div>
+    </section>
     </main>
     <!--Футер-->
     <footer class="footer-color">
+      <div class="container">
       <a class="logo" href="./index.html">Web<span class="logo-studio-white">Studio</span></a>
     
       <address class="contact-nav-color">
         <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="contact-nav">
+        <ul class="contact-nav footer">
           <li><a href="mailto:info@example.com">info@example.com</a></li>
           <li><a href="tel:+380991111111">+380991111111</a></li>
         </ul>
+      </div>
       </address>
     </footer>
 </body>
