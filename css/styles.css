@@ -22,6 +22,17 @@ body {
   background-color: var(--bg-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
 
 ul {
   padding: 0%;
@@ -43,13 +54,8 @@ ul {
   margin-left:  auto;
   margin-right: auto;
   width: 1200px;
-  outline: 2px solid red;
-
 }
 
-.page-header {
-  background-color: blue;
-}
 
 .logo-studio-black {
   color: var(--logo-header-color);
@@ -109,39 +115,50 @@ ul {
 
 /* main section */
 .section {
+  height: 600px;
+  text-align: center;
   background-color: var(--bg-color-section);
   color: var(--bg-color);
 }
 
 .section-hero {
-  margin-top: 0%;
+  display: inline-block;
+  width: 696px;
+  height: 120px;
+  margin-top: 200px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .section-button {
+  display: flex;
+  border: 1px solid transparent;
+  width: 200px;
+  height: 50px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px;
   border-radius: 4px;
   color: var(--bg-color);
   background: var(--accent-link-color);
 }
 
+
 .main-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   color: var(--main-text-color);
+
 }
+
 
 .section-command {
   background-color: var(--button-color);
@@ -156,13 +173,23 @@ ul {
 }
 
 .main-title {
+  margin-top: 0%;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 
   text-transform: uppercase;
   color: var(--title-color);
+
 }
+.main-text {
+  margin-top: 0%;
+} 
+ .main-text:last-child {
+   margin-bottom: 0%;
+ }
 
 .title-name {
   font-weight: 500;
@@ -232,11 +259,17 @@ button {
   color: var(--button-color);
 }
 
-.contact-nav-color p {
+.contact-nav-color  {
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   color: var(--bg-color);
 }
 .contact-nav .footer {
-  color: var(--bg-adress-color);
+
+  color: var(--bg-adress-color)
+  
 }
+
+
+
