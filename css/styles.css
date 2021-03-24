@@ -35,12 +35,19 @@ p {
 
 
 ul {
+  display: flex;
   padding: 0%;
   margin: 0%;
   list-style: none;
 }
 /* header */
+
+/* logo */
 .logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -50,13 +57,6 @@ ul {
   color: var(--accent-link-color);
 }
 
-.container {
-  margin-left:  auto;
-  margin-right: auto;
-  width: 1200px;
-}
-
-
 .logo-studio-black {
   color: var(--logo-header-color);
 }
@@ -65,21 +65,85 @@ ul {
   color: var(--bg-color);
 }
 
-.list-nav a,
+.container {
+  margin-left:  auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+}
+
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.main-list .item {
+  width: 270px;
+}
+
+
+
+
 .contact-nav a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration-line: none;
+  color: var(--main-text-color);
+}
+
+.contact-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+}
+
+.contact-nav .item +.item {
+  margin-left: 50px;
 }
 
 .list-nav a {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration-line: none;
   color: var(--title-color);
 }
 
-.contact-nav a {
-  color: var(--main-text-color);
+
+.list-nav {
+  display: flex;
+  max-width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+/*.list-nav .item,
+.contact-nav .item {
+  margin-right: 50px;
+}
+
+.list-nav .item:last-child {
+  margin-right: 0%;
+}*/
+
+.list-nav .item +.item {
+  margin-left: 50px;
 }
 
 .visually-hidden {
@@ -151,17 +215,30 @@ ul {
   background: var(--accent-link-color);
 }
 
+/*.section-button:hover,
+.section-button:focus {
+  color: var(--bg-color);
+  background-color: var(--accent-link-color);
+
+}*/
+
 
 .main-section {
   padding-top: 94px;
   padding-bottom: 94px;
   color: var(--main-text-color);
+  background-color: turquoise;
 
+} 
+
+.what-we-do {
+  background-color: yellow;
 }
 
 
 .section-command {
   background-color: var(--button-color);
+  outline: 2px solid red
 }
 
 .title-command {
