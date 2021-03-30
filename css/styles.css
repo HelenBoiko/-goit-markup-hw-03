@@ -71,8 +71,6 @@ ul {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left:  auto;
   margin-right: auto;
 }
@@ -180,6 +178,8 @@ ul {
 .section {
   padding-top: 200px;
   padding-bottom: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   background-color: var(--bg-color-section);
   color: var(--bg-color);
@@ -215,18 +215,25 @@ ul {
 
 
 .main-section {
-  width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   color: var(--main-text-color);
 
 } 
 
+.what-we-do {
+  padding-bottom: 94px;
+}
+
 
 
 .section-command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: var(--button-color);
 
 }
@@ -236,14 +243,9 @@ ul {
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
+  margin-bottom: 50px;
   color: var(--title-color);
 }
- 
-.title-command {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-
 
 
 .link-gadget {
@@ -374,6 +376,8 @@ button {
 /*footer*/
 
 .footer-color {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-color-section);
   
 }
