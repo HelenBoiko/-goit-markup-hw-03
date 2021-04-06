@@ -83,7 +83,7 @@ ul {
 }
 
 .page-header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .page-header .container  {
@@ -248,8 +248,6 @@ ul {
   padding-bottom: 94px;
 }
 
-
-
 .section-command {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -284,14 +282,15 @@ ul {
   width: 270px;
   margin-right: 30px;
   border-radius: 4px;
-  box-shadow: 0 10px 10px -5px rgb(0 0 0 / 30%);
+  box-shadow: 0 10px 10px -5px 
+	rgba(0,0,0,0.3);
+
   background-color: var(--bg-color);
 }
 
 .link-command:last-child {
   margin-right: 0%;
 }
-
 
 .main-title {
   margin-bottom: 10px;
@@ -382,9 +381,6 @@ button {
 }
 
 
-
-
-
 .button:hover,
 .button:focus {
   color: var(--button-color);
@@ -447,6 +443,8 @@ button {
   
 }
 
+/* PORTFOLIO */
+
 .main-portfolio {
   width: 1200px;
   padding: 94px 15px;
@@ -462,7 +460,6 @@ button {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .item-portfolio {
