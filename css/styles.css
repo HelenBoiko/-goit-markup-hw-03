@@ -130,9 +130,14 @@ ul {
   padding-bottom: 32px;
 }
 
+.item-nav{
+	padding: 32px 0;
+}
+
 .contact-nav.flex {
   display: flex;
   margin-left: auto;
+
 }
 
 .contact-nav .item-nav +.item-nav {
@@ -141,8 +146,6 @@ ul {
 
 .list-nav a {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
